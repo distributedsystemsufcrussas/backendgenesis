@@ -1,12 +1,13 @@
 [tool.poetry]
-name = "genesis backend"
-version = "alpha 1.0"
+name = "genesis ds"
+version = "0.1.0"
 description = ""
-authors = ["Luis Maia & Gabriel"]
+authors = ["Luis Maia & Gabriel Miranda"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+fastapi = "^0.116.2"
 
 
 [build-system]

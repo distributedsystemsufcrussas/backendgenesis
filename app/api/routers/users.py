@@ -1,12 +1,12 @@
 from fastapi import APIRouter
-
+from app.api.db.base import ListUsersSuccessResponse
 # Roteador para gerenciamento de usuários
 router_users = APIRouter(
     prefix="/users",
     tags=["Usuários"],
 
 )
-@router_users.get("/", response_model=List[User])
+@router_users.get("/", response_model=ListUsersSuccessResponse)
 async def list_users():
     """
     Retorna a lista de todos os usuários administradores.
